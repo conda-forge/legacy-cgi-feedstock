@@ -7,7 +7,7 @@ context:
   is_noop: ${{ "" if python_min == removed_in_python else "1" }}
   python_max: ${{ "4" if python_min == removed_in_python else removed_in_python }}
   python_check_max: ${{ "3.12" if is_noop else "3.14" }}
-  expect_files: lib/python*/site-packages/cgi*.py
+  expect_files: site-packages/cgi*.py
 
 package:
   name: legacy-cgi
