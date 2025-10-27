@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "2.6.3"
+  version: "2.6.4"
   number: 0
   removed_in_python: "3.10"
   # linter complains if any of this is done with if/then/else below
@@ -16,7 +16,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/legacy-cgi/legacy_cgi-${{ version }}.tar.gz
-  sha256: 4c119d6cb8e9d8b6ad7cc0ddad880552c62df4029622835d06dfd18f438a8154
+  sha256: abb9dfc7835772f7c9317977c63253fd22a7484b5c9bbcdca60a29dcce97c577
 
 build:
   number: ${{ effective_build_number }}
